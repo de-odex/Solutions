@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8298EAB6-0586-4BDA-9483-83624B66B13A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolutionsMod</RootNamespace>
+    <AssemblyName>SolutionsMod</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Xact\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Xact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Terraria">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Terraria\Terraria.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dusts\LightlessDust\BaseLightlessDust.cs" />
+    <Compile Include="Dusts\LightedDust\ClayDust.cs" />
+    <Compile Include="Dusts\LightedDust\DirtDust.cs" />
+    <Compile Include="Dusts\LightedDust\GraniteDust.cs" />
+    <Compile Include="Dusts\LightedDust\HoneyDust.cs" />
+    <Compile Include="Dusts\LightedDust\IceRemoveDust.cs" />
+    <Compile Include="Dusts\LightedDust\IceSpreadDust.cs" />
+    <Compile Include="Dusts\LightedDust\JungleDust.cs" />
+    <Compile Include="Dusts\LightedDust\LavaDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessClayDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessLavaDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessJungleDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessIceSpreadDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessIceRemoveDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessHoneyDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessGraniteDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessDirtDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessMarbleDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessMineralDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessWaterDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessRockDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessRedDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessPurpleDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessDeepBlueDust.cs" />
+    <Compile Include="Dusts\LightlessDust\LightlessBlueDust.cs" />
+    <Compile Include="Dusts\LightedDust\MarbleDust.cs" />
+    <Compile Include="Dusts\LightedDust\MineralDust.cs" />
+    <Compile Include="Dusts\LightedDust\RockDust.cs" />
+    <Compile Include="Dusts\LightedDust\WaterDust.cs" />
+    <Compile Include="Items\Accessories\PentaReductorBarrel.cs" />
+    <Compile Include="Items\Accessories\TriReductorBarrel.cs" />
+    <Compile Include="Items\Accessories\LongRangeBarrel.cs" />
+    <Compile Include="Items\Accessories\VastRangeBarrel.cs" />
+    <Compile Include="Items\Accessories\ConcentratorNozzle.cs" />
+    <Compile Include="Items\Accessories\SpreadNozzle.cs" />
+    <Compile Include="Items\Accessories\LightSuppressor.cs" />
+    <Compile Include="Items\SolutionsGlobalItem.cs" />
+    <Compile Include="Items\Solutions\BiomeChange\InfiniteVanillaSolutions.cs" />
+    <Compile Include="Items\Solutions\Filling\GlassSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\GlassRemovalSolution.cs" />
+    <Compile Include="Items\Solutions\GrassSpread\JungleGrassSpreadSolution.cs" />
+    <Compile Include="Items\Solutions\GrassSpread\HallowedGrassSpreadSolution.cs" />
+    <Compile Include="Items\Solutions\GrassSpread\CrimsonGrassSpreadSolution.cs" />
+    <Compile Include="Items\Solutions\GrassSpread\CorruptGrassSpreadSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\AdamantiteSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\AmethystSolution.cs" />
+    <Compile Include="Items\Clentaminator\BoomstickClentaminator.cs" />
+    <Compile Include="Items\Solutions\OreSpread\ChlorophyteSolution.cs" />
+    <Compile Include="Items\Solutions\ClaySolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\CobaltSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\CopperSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\DiamondSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\DirtRemovalSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\DirtSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\EmeraldSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\GoldSolution.cs" />
+    <Compile Include="Items\Solutions\BiomeChange\GraniteSolution.cs" />
+    <Compile Include="Items\Solutions\GrassSpread\GrassRemovalSolution.cs" />
+    <Compile Include="Items\Solutions\GrassSpread\GrassSpreadSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\HoneyRemovalSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\HoneySolution.cs" />
+    <Compile Include="Items\Solutions\BiomeChange\IceRemoveSolution.cs" />
+    <Compile Include="Items\Solutions\BiomeChange\IceSpreadSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\IronSolution.cs" />
+    <Compile Include="Items\Solutions\BiomeChange\JungleSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\LavaRemovalSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\LavaSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\LuminiteSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\LeadSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\LiquidRemovalSolution.cs" />
+    <Compile Include="Items\Solutions\BiomeChange\MarbleSolution.cs" />
+    <Compile Include="Items\Solutions\MineralSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\MudRemovalSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\MudSolution.cs" />
+    <Compile Include="Items\Solutions\GrassSpread\MushroomGrassSpreadSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\MythrilSolution.cs" />
+    <Compile Include="Items\Clentaminator\OneShotClentaminator.cs" />
+    <Compile Include="Items\Solutions\OreSpread\OrichalcumSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\PalladiumSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\PlatinumSolution.cs" />
+    <Compile Include="Items\Solutions\BiomeChange\RockNormalizerSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\RockRemovalSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\RockSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\RubySolution.cs" />
+    <Compile Include="Items\Solutions\Filling\SandRemovalSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\SandSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\SapphireSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\SilverSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\TinSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\TitaniumSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\TopazSolution.cs" />
+    <Compile Include="Items\Solutions\OreSpread\TungstenSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\WaterRemovalSolution.cs" />
+    <Compile Include="Items\Solutions\Filling\WaterSolution.cs" />
+    <Compile Include="NPCs\SolutionsGlobalNPC.cs" />
+    <Compile Include="NPCs\Terraformer.cs" />
+    <Compile Include="Projectiles\SolutionsGlobalProjectile.cs" />
+    <Compile Include="Projectiles\Solutions\BiomeChange\RockNormalizerSolution.cs" />
+    <Compile Include="Projectiles\Solutions\BiomeChange\JungleSolution.cs" />
+    <Compile Include="Projectiles\Solutions\BiomeChange\IceSpreadSolution.cs" />
+    <Compile Include="Projectiles\Solutions\BiomeChange\IceRemoveSolution.cs" />
+    <Compile Include="Projectiles\Solutions\BiomeChange\MarbleSolution.cs" />
+    <Compile Include="Projectiles\Solutions\BiomeChange\GraniteSolution.cs" />
+    <Compile Include="Projectiles\Solutions\BiomeChange\PurpleSolution.cs" />
+    <Compile Include="Projectiles\Solutions\BiomeChange\RedSolution.cs" />
+    <Compile Include="Projectiles\Solutions\BiomeChange\DeepBlueSolution.cs" />
+    <Compile Include="Projectiles\Solutions\BiomeChange\BlueSolution.cs" />
+    <Compile Include="Projectiles\Solutions\BiomeChange\GreenSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\Block\GlassSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\Block\GlassRemovalSolution.cs" />
+    <Compile Include="Projectiles\Solutions\MineralSolution.cs" />
+    <Compile Include="Projectiles\Solutions\GrassSpread\HallowedGrassSpreadSolution.cs" />
+    <Compile Include="Projectiles\Solutions\GrassSpread\JungleGrassSpreadSolution.cs" />
+    <Compile Include="Projectiles\Solutions\GrassSpread\MushroomGrassSpreadSolution.cs" />
+    <Compile Include="Projectiles\Solutions\GrassSpread\CrimsonGrassSpreadSolution.cs" />
+    <Compile Include="Projectiles\Solutions\GrassSpread\CorruptGrassSpreadSolution.cs" />
+    <Compile Include="Projectiles\Solutions\GrassSpread\GrassRemovalSolution.cs" />
+    <Compile Include="Projectiles\Solutions\GrassSpread\BaseGrassSpreadSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\Block\MudRemovalSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\Block\RockRemovalSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\Block\SandRemovalSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\Block\DirtRemovalSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\Block\MudSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\Block\SandSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\Block\RockSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\Block\DirtSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\HoneyRemovalSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\HoneySolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\LavaRemovalSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\LavaSolution.cs" />
+    <Compile Include="Projectiles\Solutions\ClaySolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\BlockRemovalSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\BlockFillingSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\LiquidRemovalSolution.cs" />
+    <Compile Include="Projectiles\Solutions\BaseSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\LuminiteSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\SapphireSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\TitaniumSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\TungstenSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\TopazSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\SilverSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\TinSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\RubySolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\PlatinumSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\PalladiumSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\OrichalcumSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\MythrilSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\LeadSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\GoldSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\IronSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\EmeraldSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\DiamondSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\CopperSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\CobaltSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\ChlorophyteSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\AmethystSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\AdamantiteSolution.cs" />
+    <Compile Include="Projectiles\Solutions\OreSpread\OreSpreadSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\WaterRemovalSolution.cs" />
+    <Compile Include="Projectiles\Solutions\Filling\WaterSolution.cs" />
+    <Compile Include="SolutionsMod.cs" />
+    <Compile Include="SolutionsPlayer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dusts\LightedDust\ClayDust.png" />
+    <Content Include="Dusts\LightedDust\DirtDust.png" />
+    <Content Include="Dusts\LightedDust\GraniteDust.png" />
+    <Content Include="Dusts\LightedDust\HoneyDust.png" />
+    <Content Include="Dusts\LightedDust\IceRemoveDust.png" />
+    <Content Include="Dusts\LightedDust\IceSpreadDust.png" />
+    <Content Include="Dusts\LightedDust\JungleDust.png" />
+    <Content Include="Dusts\LightedDust\LavaDust.png" />
+    <Content Include="Dusts\LightlessDust\BaseLightlessDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessLavaDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessJungleDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessIceSpreadDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessIceRemoveDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessGraniteDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessHoneyDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessDirtDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessClayDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessBlueDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessDeepBlueDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessPurpleDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessRedDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessMineralDust.png" />
+    <Content Include="Dusts\LightedDust\MarbleDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessMarbleDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessRockDust.png" />
+    <Content Include="Dusts\LightlessDust\LightlessWaterDust.png" />
+    <Content Include="Dusts\LightedDust\MineralDust.png" />
+    <Content Include="Dusts\LightedDust\RockDust.png" />
+    <Content Include="Dusts\LightedDust\WaterDust.png" />
+    <Content Include="Items\Accessories\ConcentratorNozzle.png" />
+    <Content Include="Items\Accessories\LightSuppressor.png" />
+    <Content Include="Items\Accessories\LongRangeBarrel.png" />
+    <Content Include="Items\Accessories\PentaReductorBarrel.png" />
+    <Content Include="Items\Accessories\SpreadNozzle.png" />
+    <Content Include="Items\Accessories\TriReductorBarrel.png" />
+    <Content Include="Items\Accessories\VastRangeBarrel.png" />
+    <Content Include="Items\Solutions\BiomeChange\InfiniteBlueSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\InfiniteDarkBlueSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\InfiniteGraniteSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\InfiniteGreenSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\InfiniteIceRemoveSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\InfiniteIceSpreadSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\InfiniteJungleSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\InfiniteMarbleSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\InfinitePurpleSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\InfiniteRedSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\InfiniteRockNormalizerSolution.png" />
+    <Content Include="Items\Solutions\Filling\GlassRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteDirtRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteDirtSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteHoneyRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteHoneySolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteLavaRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteLavaSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteLiquidRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteMudRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteMudSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteRockRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteRockSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteSandRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteSandSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteWaterRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\InfiniteWaterSolution.png" />
+    <Content Include="Items\Solutions\Filling\GlassSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\InfiniteCorruptGrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\InfiniteCrimsonGrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\InfiniteGrassRemovalSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\InfiniteGrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\InfiniteHallowedGrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\InfiniteJungleGrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\InfiniteMushroomGrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\JungleGrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\HallowedGrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\CrimsonGrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\CorruptGrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\InfiniteClaySolution.png" />
+    <Content Include="Items\Solutions\InfiniteMineralSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\AdamantiteSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\AmethystSolution.png" />
+    <Content Include="Items\Clentaminator\BoomstickClentaminator.png" />
+    <Content Include="Items\Solutions\OreSpread\ChlorophyteSolution.png" />
+    <Content Include="Items\Solutions\ClaySolution.png" />
+    <Content Include="Items\Solutions\OreSpread\CobaltSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\CopperSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\DiamondSolution.png" />
+    <Content Include="Items\Solutions\Filling\DirtRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\DirtSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\EmeraldSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\GoldSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\GraniteSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\GrassRemovalSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\GrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\Filling\HoneyRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\HoneySolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\IceRemoveSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\IceSpreadSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteAdamantiteSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteAmethystSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteChlorophyteSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteCobaltSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteCopperSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteDiamondSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteEmeraldSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteGoldSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteIronSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteLeadSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteLuminiteSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteMythrilSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteOrichalcumSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfinitePalladiumSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfinitePlatinumSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteRubySolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteSapphireSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteSilverSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteTinSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteTitaniumSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteTopazSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\InfiniteTungstenSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\IronSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\JungleSolution.png" />
+    <Content Include="Items\Solutions\Filling\LavaRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\LavaSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\LeadSolution.png" />
+    <Content Include="Items\Solutions\Filling\LiquidRemovalSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\MarbleSolution.png" />
+    <Content Include="Items\Solutions\MineralSolution.png" />
+    <Content Include="Items\Solutions\Filling\MudRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\MudSolution.png" />
+    <Content Include="Items\Solutions\GrassSpread\MushroomGrassSpreadSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\LuminiteSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\MythrilSolution.png" />
+    <Content Include="Items\Clentaminator\OneShotClentaminator.png" />
+    <Content Include="Items\Solutions\OreSpread\OrichalcumSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\PalladiumSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\PlatinumSolution.png" />
+    <Content Include="Items\Solutions\BiomeChange\RockNormalizerSolution.png" />
+    <Content Include="Items\Solutions\Filling\RockRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\RockSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\RubySolution.png" />
+    <Content Include="Items\Solutions\Filling\SandRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\SandSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\SapphireSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\SilverSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\TinSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\TitaniumSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\TopazSolution.png" />
+    <Content Include="Items\Solutions\OreSpread\TungstenSolution.png" />
+    <Content Include="Items\Solutions\Filling\WaterRemovalSolution.png" />
+    <Content Include="Items\Solutions\Filling\WaterSolution.png" />
+    <Content Include="NPCs\Terraformer.png" />
+    <Content Include="NPCs\Terraformer_Head.png" />
+    <Content Include="Projectiles\Solutions\BaseSolution.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\Steam\steamapps\common\terraria\Terraria.exe" -build "$(ProjectDir)\" -eac "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

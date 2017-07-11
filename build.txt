@@ -1,0 +1,9 @@
+author = JPAN
+version = 1.4
+displayName = Solutions Mod
+hideCode = false
+hideResources = false
+includeSource = true
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
+includePDB = true
+homepage = https://forums.terraria.org/index.php?threads/solutions-mod.54710/

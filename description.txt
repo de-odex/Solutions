@@ -1,0 +1,45 @@
+Solutions mod adds several new Clentaminator solutions by way of a new town NPC, the Terraformer.
+This solutions range from Filling solutions, which fill empty space with a block (or liquid), Removal solutions that remove any block (or liquid), biome spreading solutions, such as one for the Ice biome, to Ore spreading solutions that replace stone with a variety of ores and gems.
+This mod also add two new Clentaminator types, also sold by the Terraformer: the "One Shot Clentaminator" that allows you to fire one solution vial at a time (no more consuming 5 vials to convert one block) and the "Boomstick Clentaminator" that fires three bursts of spray (shotgun spread) per single vial shot (also with no auto reuse). 
+
+To unlock the Terraformer, you need to have any Clentaminator in your inventory and an empty house. If she dies, she will only respawn if you have a clentaminator with you.
+
+Changelog v 1.4
+- Version for tmod 0.10
+- Added Actuating/De-Actuating Solutions:
+  - They make appropriate solid blocks become passable/solid again. Actuating version sold by the Terraformer for 10 silver, post Golem, De-Actuating version crafted from 1 Actuating one.
+- Added Actuator Placing Solution:
+  - Places actuators on wired, solid tiles that can be actuated eventually (ignores restrictions such as trees or chests on top). Made from 10 actuators and one Mineral Solution.
+- Added Wire Removing Solution:
+  - Removes all wires, actuators and junction boxes placed on tiles. Sold by the Terraformer after defeating the Golem for 50 Silver.
+- Added Lihzarhd Brick Solution (an ore spreading solution)
+- Added Pickaxe Power Solution:
+  - This special solution can remove any block your strongest pickaxe/drill/claw can mine. Example: If you only have a Copper pickaxe with you, dungeon bricks cannot be removed. However, if you have a Cobalt Pickaxe and a Copper Pickaxe in your inventory, dungeon bricks will be destroyed. For Lihzarhd Bricks, a Picksaw in your inventory is required, regardless of where it lies. It is sold by the Terraformer after you defeat all 3 mechanical bosses.
+
+Changelog v 1.3.2.1
+- Corrected Dark Blue Solution spreading Crimson.
+
+Changelog v 1.3.1
+- Corrected Chlorophyte solution spreading Adamantite.
+
+Changelog V1.3
+- Major code refactor to allow for customizing sprays.
+- Added Grass Spreading Solutions:
+  - Spread their respective kind of grass to any dirt/mud block that is in contact with air or platforms.
+  - "Grass Spreading Solution" bought at the Terraformer for 25 silver.
+  - Hallowed, Corrupt, Crimson, Mushroom and Jungle versions crafted with one "Grass Spreading Solution" and one biome converting solution (crafts 2).
+- "Anti-Grass Solution" now crafted with a "Grass Spreading Solution" instead of bought.
+- Added "Glass Filling Solution" and "Glass Removal Solution", crafted with 2 "Sand filling Solution" and one "Lava Filling Solution".
+- Added a "Luminite Solution" that drops from the Moon Lord with 1/5 chance (cannot be crafted like other ore/gem solutions).
+- Added Infinite versions to all solutions, crafted with 999*4 for most solutions and for ores/gem solutions with either 999*10 ore/gem + 999 Mineral Solution or 999 of the ore spread solution.
+- Added Nozzle and Barrel accessories, sold by the Terraformer:
+  - Light Suppressor is available from the start, costs 50 gold, and makes all sprays emit no light.
+  - Concentrator Nozzle is available post three mechanical bosses for 2.5 platinum and reduces the radius of conversion by half.
+  - Spread Nozzle is available post Moon Lord for 10 platinum and doubles conversion radius.
+  - Tri Reductor Barrel is available post three mechanical bosses for 5 platinum, and reduces spray distance by 1/3 and chance to consume ammo to 1/3.
+  - Penta Reductor Barrel is available post Plantera for 7.5 platinum, and reduces spray distance by 1/5 and chance to consume ammo to 1/5.
+  - Long Range Barrel is available post Plantera for 10 platinum and doubles spray distance at the cost of double ammo consumption.
+  - Vast Range Barrel is available post Moon lord for 20 platinum and quadrples spray distance at the cost of 4 times the ammo consumption.
+     - All accessories stack and work regardless of ammo available, so shooting Clentaminator with a Long + Vast Range Barrel will consume 8 ammo if available, but still work and shoot 8 times further even if you only have one solution.
+  - Terraformer now only spawns in hardmode, and unlocks Filling potions after the 3 Mechanical Bosses and Mineral Solution after Plantera
+  - Mineral Solution now costs 6 gold.
