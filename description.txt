@@ -4,6 +4,11 @@ This mod also add two new Clentaminator types, also sold by the Terraformer: the
 
 To unlock the Terraformer, you need to have any Clentaminator in your inventory and an empty house. If she dies, she will only respawn if you have a clentaminator with you.
 
+Changelog v 1.4.1
+- Jungle solution now also converts dirt into mud and any corrupt stone/sand back to normal.
+- Added icon
+
+
 Changelog v 1.4
 - Version for tmod 0.10
 - Added Actuating/De-Actuating Solutions:

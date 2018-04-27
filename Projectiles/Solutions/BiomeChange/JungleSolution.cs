@@ -1,6 +1,7 @@
 ﻿using System;
 using SolutionsMod.Dusts.LightedDust;
 using Terraria;
+using Terraria.ID;
 
 namespace SolutionsMod.Projectiles.Solutions.BiomeChange
 {
@@ -30,24 +31,62 @@ namespace SolutionsMod.Projectiles.Solutions.BiomeChange
                             WorldGen.SquareWallFrame(k, l, true);
                             NetMessage.SendTileSquare(-1, k, l, 1);
                         }
-
-                        if (wall == 63)
+                        else if (wall == 63)
                         {
                             Main.tile[k, l].wall = 64;
+                            WorldGen.SquareWallFrame(k, l, true);
+                            NetMessage.SendTileSquare(-1, k, l, 1);
+                        }
+                        else if (WallID.Sets.Conversion.Stone[wall] && wall != WallID.Stone)
+                        {
+                            Main.tile[k, l].wall = WallID.Stone;
+                            WorldGen.SquareWallFrame(k, l, true);
+                            NetMessage.SendTileSquare(-1, k, l, 1);
+                        }
+                        else if (WallID.Sets.Conversion.HardenedSand[wall] && wall != WallID.HardenedSand)
+                        {
+                            Main.tile[k, l].wall = WallID.HardenedSand;
+                            WorldGen.SquareWallFrame(k, l, true);
+                            NetMessage.SendTileSquare(-1, k, l, 1);
+                        }
+                        else if (WallID.Sets.Conversion.Sandstone[wall] && wall != WallID.Sandstone)
+                        {
+                            Main.tile[k, l].wall = WallID.Sandstone;
                             WorldGen.SquareWallFrame(k, l, true);
                             NetMessage.SendTileSquare(-1, k, l, 1);
                         }
 
                         if (type == 0 && Main.tile[k, l].active())
                         {
-                            Main.tile[k, l].type = 59;
+                            Main.tile[k, l].type = TileID.Mud;
+                            WorldGen.SquareTileFrame(k, l, true);
+                            NetMessage.SendTileSquare(-1, k, l, 1);
+                        }else if (TileID.Sets.Conversion.Sand[type] && type != TileID.Sand)
+                        {
+                            Main.tile[k, l].type = TileID.Sand;
+                            WorldGen.SquareTileFrame(k, l, true);
+                            NetMessage.SendTileSquare(-1, k, l, 1);
+                        }else if (TileID.Sets.Conversion.HardenedSand[type] && type != TileID.HardenedSand)
+                        {
+                            Main.tile[k, l].type = TileID.HardenedSand;
                             WorldGen.SquareTileFrame(k, l, true);
                             NetMessage.SendTileSquare(-1, k, l, 1);
                         }
-
-                        else if (type == 2)
+                        else if (TileID.Sets.Conversion.Sandstone[type] && type != TileID.Sandstone)
                         {
-                            Main.tile[k, l].type = 60;
+                            Main.tile[k, l].type = TileID.Sandstone;
+                            WorldGen.SquareTileFrame(k, l, true);
+                            NetMessage.SendTileSquare(-1, k, l, 1);
+                        }
+                        else if (TileID.Sets.Grass[type] || type == TileID.MushroomGrass)
+                        {
+                            Main.tile[k, l].type = TileID.JungleGrass;
+                            WorldGen.SquareTileFrame(k, l, true);
+                            NetMessage.SendTileSquare(-1, k, l, 1);
+                        }
+                        else if (TileID.Sets.Stone[type] && type != TileID.Stone)
+                        {
+                            Main.tile[k, l].type = TileID.Stone;
                             WorldGen.SquareTileFrame(k, l, true);
                             NetMessage.SendTileSquare(-1, k, l, 1);
                         }
