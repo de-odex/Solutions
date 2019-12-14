@@ -16,7 +16,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
 		{
-			
+
 			item.shoot = mod.ProjectileType("HoneySolution") - ProjectileID.PureSpray;
 			item.ammo = ItemID.GreenSolution;
 			item.width = 10;
@@ -47,7 +47,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<HoneySolution>());
+            item.CloneDefaults(mod.ItemType("HoneySolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

@@ -45,7 +45,7 @@ namespace SolutionsMod.Items.Solutions.BiomeChange
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<IceSpreadSolution>());
+            item.CloneDefaults(mod.ItemType("IceSpreadSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

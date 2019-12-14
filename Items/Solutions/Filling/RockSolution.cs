@@ -45,7 +45,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<RockSolution>());
+            item.CloneDefaults(mod.ItemType("RockSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

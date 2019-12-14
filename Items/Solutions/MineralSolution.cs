@@ -45,7 +45,7 @@ namespace SolutionsMod.Items.Solutions
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<MineralSolution>());
+            item.CloneDefaults(mod.ItemType("MineralSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

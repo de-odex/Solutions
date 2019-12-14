@@ -16,7 +16,7 @@ namespace SolutionsMod.Items.Solutions.BiomeChange
 
         public override void SetDefaults()
 		{
-			
+
 			item.shoot = mod.ProjectileType("JungleSolution") - ProjectileID.PureSpray;
 			item.ammo = ItemID.GreenSolution;
 			item.width = 10;
@@ -47,7 +47,7 @@ namespace SolutionsMod.Items.Solutions.BiomeChange
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<JungleSolution>());            
+            item.CloneDefaults(mod.ItemType("JungleSolution"));
             item.consumable = false;
         }
 

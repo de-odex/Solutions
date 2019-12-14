@@ -8,7 +8,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling.Block
         public override void SetDefaults()
         {
             base.SetDefaults();
-            dustType = mod.DustType<HoneyDust>();
+            dustType = mod.DustType("HoneyDust");
             blockID = TileID.Sand;
         }
     }

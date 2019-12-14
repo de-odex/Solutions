@@ -13,7 +13,7 @@ namespace SolutionsMod.Items.Accessories
         }
 
         public override void SetDefaults()
-        {          
+        {
             item.width = 16;
             item.height = 16;
             item.value = Item.buyPrice(2, 50, 0, 0);
@@ -24,7 +24,7 @@ namespace SolutionsMod.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            SolutionsPlayer p = player.GetModPlayer<SolutionsPlayer>(mod);
+            SolutionsPlayer p = player.GetModPlayer<SolutionsPlayer>();
             p.solRadiusHalf = true;
         }
     }

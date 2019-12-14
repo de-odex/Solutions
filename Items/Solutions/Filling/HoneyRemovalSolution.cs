@@ -34,7 +34,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
             recipe = new ModRecipe(mod);
             recipe.AddIngredient(this, 1);
-            recipe.SetResult(mod, "HoneySolution"); 
+            recipe.SetResult(mod, "HoneySolution");
             recipe.AddRecipe();
         }
 	}
@@ -50,7 +50,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<HoneyRemovalSolution>());
+            item.CloneDefaults(mod.ItemType("HoneyRemovalSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

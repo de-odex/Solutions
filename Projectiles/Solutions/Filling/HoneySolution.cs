@@ -15,7 +15,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
             base.SetDefaults();
             //projectile.name = "Honey Spray";
             projectile.ignoreWater = true;
-            dustType = mod.DustType<HoneyDust>();
+            dustType = mod.DustType("HoneyDust");
             maxTime = 64;
             minDistance = 128;
         }
@@ -36,7 +36,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
 							WorldGen.SquareWallFrame(k, l, true);
 							NetMessage.SendTileSquare(-1, k, l, 1);
 						}*/
-						
+
 						/*if (type == 0 && Main.tile[k, l].active() || type == 2 || type == 23 || type == 109 || type == 199)*/
 						if(Main.tile[k, l].liquid > 0){
 							if(Main.tile[k, l].honey()){
@@ -68,8 +68,8 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
 								WorldGen.SquareTileFrame(k, l, true);
 								NetMessage.SendTileSquare(-1, k, l, 1);
 							}
-						}					
-						
+						}
+
 					}
 				}
 			}

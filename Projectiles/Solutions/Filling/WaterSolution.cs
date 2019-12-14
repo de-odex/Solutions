@@ -15,7 +15,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
             base.SetDefaults();
 			//projectile.name = "Water Spray";
 			projectile.ignoreWater = true;
-            dustType = mod.DustType<WaterDust>();
+            dustType = mod.DustType("WaterDust");
             maxTime = 64;
             minDistance = 128;
         }
@@ -29,7 +29,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
 					if (WorldGen.InWorld(k, l, 1) && Math.Abs(k - i) + Math.Abs(l - j) < Math.Sqrt(size * size + size * size))
 					{
 						int type = (int)Main.tile[k, l].type;
-						
+
 						if(Main.tile[k, l].liquid > 0){
 							if(Main.tile[k, l].liquidType() == 0){
 								Main.tile[k, l].liquid = 255;
@@ -60,8 +60,8 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
 								WorldGen.SquareTileFrame(k, l, true);
 								NetMessage.SendTileSquare(-1, k, l, 1);
 							}
-						}					
-						
+						}
+
 					}
 				}
 			}

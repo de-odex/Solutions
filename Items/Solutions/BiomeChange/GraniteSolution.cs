@@ -46,7 +46,7 @@ namespace SolutionsMod.Items.Solutions.BiomeChange
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<GraniteSolution>());            
+            item.CloneDefaults(mod.ItemType("GraniteSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

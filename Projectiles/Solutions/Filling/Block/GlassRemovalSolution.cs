@@ -9,7 +9,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling.Block
         public override void SetDefaults()
         {
             base.SetDefaults();
-            dustType = mod.DustType<IceRemoveDust>();
+            dustType = mod.DustType("IceRemoveDust");
             blockID = TileID.Glass;
             wallSet = glassWalls;
         }

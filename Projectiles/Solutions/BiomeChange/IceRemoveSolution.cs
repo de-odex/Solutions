@@ -11,7 +11,7 @@ namespace SolutionsMod.Projectiles.Solutions.BiomeChange
             base.SetDefaults();
             //projectile.name = "Ice Spray";
             maxTime = 134;
-            dustType = mod.DustType<IceRemoveDust>();
+            dustType = mod.DustType("IceRemoveDust");
         }
 
         public override void Convert(int i, int j, int size = 4)

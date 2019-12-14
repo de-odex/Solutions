@@ -13,23 +13,23 @@ namespace SolutionsMod.Items
             {
                 if (item.shoot == 0)
                 {
-                    item.shoot = mod.ProjectileType<GreenSolution>() - ProjectileID.PureSpray;
+                    item.shoot = mod.ProjectileType("GreenSolution") - ProjectileID.PureSpray;
                 }
                 else if (item.shoot == 2)
                 {
-                    item.shoot = mod.ProjectileType<PurpleSolution>() - ProjectileID.PureSpray;
+                    item.shoot = mod.ProjectileType("PurpleSolution") - ProjectileID.PureSpray;
                 }
                 else if (item.shoot == 1)
                 {
-                    item.shoot = mod.ProjectileType<BlueSolution>() - ProjectileID.PureSpray;
+                    item.shoot = mod.ProjectileType("BlueSolution") - ProjectileID.PureSpray;
                 }
                 else if (item.shoot == 4)
                 {
-                    item.shoot = mod.ProjectileType<RedSolution>() - ProjectileID.PureSpray;
+                    item.shoot = mod.ProjectileType("RedSolution") - ProjectileID.PureSpray;
                 }
                 else if (item.shoot == 3)
                 {
-                    item.shoot = mod.ProjectileType<DeepBlueSolution>() - ProjectileID.PureSpray;
+                    item.shoot = mod.ProjectileType("DeepBlueSolution") - ProjectileID.PureSpray;
                 }
             }
         }
@@ -42,7 +42,7 @@ namespace SolutionsMod.Items
                     return false;
 
                 float consumed = 1.0f;
-                SolutionsPlayer p = player.GetModPlayer<SolutionsPlayer>(mod);
+                SolutionsPlayer p = player.GetModPlayer<SolutionsPlayer>();
                 if (p.solTimesFour)
                     consumed *= 4;
                 if (p.solTimesTwo)

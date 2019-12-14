@@ -47,7 +47,7 @@ namespace SolutionsMod.Items.Solutions.GrassSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<CorruptGrassSpreadSolution>());            
+            item.CloneDefaults(mod.ItemType("CorruptGrassSpreadSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

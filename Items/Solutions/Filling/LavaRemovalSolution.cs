@@ -34,7 +34,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
             recipe = new ModRecipe(mod);
             recipe.AddIngredient(this, 1);
-            recipe.SetResult(mod, "LavaSolution"); 
+            recipe.SetResult(mod, "LavaSolution");
             recipe.AddRecipe();
         }
 	}
@@ -51,7 +51,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<LavaRemovalSolution>());
+            item.CloneDefaults(mod.ItemType("LavaRemovalSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

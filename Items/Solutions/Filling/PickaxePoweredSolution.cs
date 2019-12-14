@@ -49,7 +49,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<PickaxePoweredSolution>());        
+            item.CloneDefaults(mod.ItemType("PickaxePoweredSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

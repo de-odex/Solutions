@@ -16,7 +16,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
 		{
-			
+
 			item.shoot = mod.ProjectileType("DirtSolution") - ProjectileID.PureSpray;
 			item.ammo = ItemID.GreenSolution;
 			item.width = 10;
@@ -48,7 +48,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<DirtSolution>());
+            item.CloneDefaults(mod.ItemType("DirtSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

@@ -59,7 +59,7 @@ namespace SolutionsMod.NPCs
 				{
 					for (int j = 0; j < player.inventory.Length; j++)
 					{
-						if (player.inventory[j].type == ItemID.Clentaminator || 
+						if (player.inventory[j].type == ItemID.Clentaminator ||
 							player.inventory[j].type == mod.ItemType("OneShotClentaminator") ||
 							player.inventory[j].type == mod.ItemType("BoomstickClentaminator"))
 						{
@@ -213,7 +213,7 @@ namespace SolutionsMod.NPCs
 				nextSlot++;
 				shop.item[nextSlot].SetDefaults(mod.ItemType("HoneySolution"));
 				nextSlot++;
-                shop.item[nextSlot].SetDefaults(mod.ItemType<PickaxePoweredSolution>());
+                shop.item[nextSlot].SetDefaults(mod.ItemType("PickaxePoweredSolution"));
                 nextSlot++;
             }
 			if(NPC.downedPlantBoss){
@@ -224,7 +224,7 @@ namespace SolutionsMod.NPCs
             {
                 shop.item[nextSlot].SetDefaults(mod.ItemType("WireRemovalSolution"));
                 nextSlot++;
-                shop.item[nextSlot].SetDefaults(mod.ItemType<ActuatingSolution>());
+                shop.item[nextSlot].SetDefaults(mod.ItemType("ActuatingSolution"));
                 nextSlot++;
             }
         }

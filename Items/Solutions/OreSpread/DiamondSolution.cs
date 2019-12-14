@@ -32,7 +32,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 			/*recipe.AddIngredient(ItemID.DirtBlock);
 			recipe.SetResult(this, 999);
 			recipe.AddRecipe();
-			
+
 			recipe = new ModRecipe(mod);*/
 			recipe.AddIngredient(ItemID.Diamond,10);
 			recipe.AddIngredient(null,"MineralSolution");
@@ -53,7 +53,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<DiamondSolution>());
+            item.CloneDefaults(mod.ItemType("DiamondSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

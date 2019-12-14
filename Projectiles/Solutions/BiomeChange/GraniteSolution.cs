@@ -11,7 +11,7 @@ namespace SolutionsMod.Projectiles.Solutions.BiomeChange
             base.SetDefaults();
             //projectile.name = "Granite Spray";
             maxTime = 134;
-            dustType = mod.DustType<GraniteDust>();
+            dustType = mod.DustType("GraniteDust");
         }
 
         public override void Convert(int i, int j, int size = 4)
@@ -24,7 +24,7 @@ namespace SolutionsMod.Projectiles.Solutions.BiomeChange
                     {
                         int type = (int)Main.tile[k, l].type;
                         int wall = (int)Main.tile[k, l].wall;
-                   
+
                         if (wall == 3 || wall == 28 || (wall > 53 && wall < 60) || wall == 61 || wall == 83 || wall == 178)
                         {
                             Main.tile[k, l].wall = 180;

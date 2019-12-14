@@ -12,7 +12,7 @@ namespace SolutionsMod.Projectiles.Solutions
         {
             base.SetDefaults();
             //projectile.name = "Clay Spray";
-            dustType = mod.DustType<ClayDust>();
+            dustType = mod.DustType("ClayDust");
         }
 
         public override void Convert(int i, int j, int size = 4)
@@ -24,8 +24,8 @@ namespace SolutionsMod.Projectiles.Solutions
                     if (WorldGen.InWorld(k, l, 1) && Math.Abs(k - i) + Math.Abs(l - j) < Math.Sqrt(size * size + size * size))
                     {
                         int type = (int)Main.tile[k, l].type;
-                        if (Main.tile[k, l].active() && (TileID.Sets.Conversion.Grass[type] ||type == TileID.Dirt)){ 
-                        
+                        if (Main.tile[k, l].active() && (TileID.Sets.Conversion.Grass[type] ||type == TileID.Dirt)){
+
                             Main.tile[k, l].type = TileID.ClayBlock;
                             WorldGen.SquareTileFrame(k, l, true);
                             NetMessage.SendTileSquare(-1, k, l, 1);

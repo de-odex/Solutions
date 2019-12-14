@@ -45,7 +45,7 @@ namespace SolutionsMod.Items.Solutions
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<ActuatingSolution>());
+            item.CloneDefaults(mod.ItemType("ActuatingSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }
@@ -65,13 +65,13 @@ namespace SolutionsMod.Items.Solutions
             recipe.AddRecipe();
 
             recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod, "InfiniteDeActuatingSolution", 1);            
+            recipe.AddIngredient(mod, "InfiniteDeActuatingSolution", 1);
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
 
             recipe = new ModRecipe(mod);
             recipe.AddIngredient(this, 1);
-            recipe.SetResult(mod, "InfiniteDeActuatingSolution", 1); 
+            recipe.SetResult(mod, "InfiniteDeActuatingSolution", 1);
             recipe.AddRecipe();
         }
     }

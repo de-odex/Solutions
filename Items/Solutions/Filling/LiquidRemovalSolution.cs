@@ -48,7 +48,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<LiquidRemovalSolution>());
+            item.CloneDefaults(mod.ItemType("LiquidRemovalSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

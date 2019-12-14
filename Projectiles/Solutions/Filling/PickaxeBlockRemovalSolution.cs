@@ -18,7 +18,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
            // projectile.name = "Removal Spray";
             maxTime = 133;
             //minDistance = 128;
-            dustType = mod.DustType<RockDust>();
+            dustType = mod.DustType("RockDust");
         }
 
         public override void Convert(int i, int j, int size = 4)
@@ -40,7 +40,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
                             WorldGen.SquareWallFrame(k, l, true);
                             NetMessage.SendTileSquare(-1, k, l, 1);
                         }
-                        if (canMineTile(k, l, pickP) && !hasChest(k, l)) { 
+                        if (canMineTile(k, l, pickP) && !hasChest(k, l)) {
                                 Main.tile[k, l].active(false);
                                 WorldGen.SquareTileFrame(k, l, true);
                                 NetMessage.SendTileSquare(-1, k, l, 1);

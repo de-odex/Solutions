@@ -28,7 +28,7 @@ namespace SolutionsMod.Items.Solutions
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem<ActuatingSolution>(), 1);
+			recipe.AddIngredient(mod.GetItem("ActuatingSolution"), 1);
 			recipe.SetResult(this, 1);
 			recipe.AddRecipe();
 		}
@@ -45,7 +45,7 @@ namespace SolutionsMod.Items.Solutions
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<DeActuatingSolution>());
+            item.CloneDefaults(mod.ItemType("DeActuatingSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

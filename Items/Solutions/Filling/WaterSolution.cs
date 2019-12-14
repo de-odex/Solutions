@@ -48,7 +48,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<WaterSolution>());
+            item.CloneDefaults(mod.ItemType("WaterSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

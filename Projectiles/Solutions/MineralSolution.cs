@@ -12,7 +12,7 @@ namespace SolutionsMod.Projectiles.Solutions
         {
             base.SetDefaults();
            // projectile.name = "Mineral Spray";
-            dustType = mod.DustType<MineralDust>();
+            dustType = mod.DustType("MineralDust");
         }
 
         public override void Convert(int i, int j, int size = 4)

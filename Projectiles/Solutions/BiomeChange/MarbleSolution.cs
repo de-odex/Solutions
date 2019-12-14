@@ -11,7 +11,7 @@ namespace SolutionsMod.Projectiles.Solutions.BiomeChange
             base.SetDefaults();
             //projectile.name = "Marble Spray";
             maxTime = 134;
-            dustType = mod.DustType<MarbleDust>();
+            dustType = mod.DustType("MarbleDust");
         }
 
         public override void Convert(int i, int j, int size = 4)

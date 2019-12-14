@@ -13,7 +13,7 @@ namespace SolutionsMod.Projectiles.Solutions.GrassSpread
         public override void SetDefaults()
         {
             base.SetDefaults();
-            dustType = mod.DustType<JungleDust>();
+            dustType = mod.DustType("JungleDust");
             dirtID = TileID.Mud;
             grassID = TileID.JungleGrass;
             wallSet = null;

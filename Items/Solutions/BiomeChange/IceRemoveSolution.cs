@@ -16,7 +16,7 @@ namespace SolutionsMod.Items.Solutions.BiomeChange
 
         public override void SetDefaults()
 		{
-			
+
 			item.shoot = mod.ProjectileType("IceRemoveSolution") - ProjectileID.PureSpray;
 			item.ammo = ItemID.GreenSolution;
 			item.width = 10;
@@ -47,7 +47,7 @@ namespace SolutionsMod.Items.Solutions.BiomeChange
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<IceRemoveSolution>());
+            item.CloneDefaults(mod.ItemType("IceRemoveSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

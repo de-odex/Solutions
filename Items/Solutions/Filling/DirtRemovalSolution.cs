@@ -33,7 +33,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 			recipe.AddRecipe();
 
             recipe = new ModRecipe(mod);
-            recipe.AddIngredient(this, 1); 
+            recipe.AddIngredient(this, 1);
             recipe.SetResult(mod, "DirtSolution");
             recipe.AddRecipe();
         }
@@ -51,7 +51,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<DirtRemovalSolution>());
+            item.CloneDefaults(mod.ItemType("DirtRemovalSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

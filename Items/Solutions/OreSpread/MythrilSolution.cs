@@ -21,7 +21,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 			item.height = 12;
 			item.value = Item.buyPrice(0, 2, 50, 0);
 			item.rare = 4;
-			item.maxStack = 999;		
+			item.maxStack = 999;
 			item.consumable = true;
 		}
 
@@ -31,7 +31,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 			/*recipe.AddIngredient(ItemID.DirtBlock);
 			recipe.SetResult(this, 999);
 			recipe.AddRecipe();
-			
+
 			recipe = new ModRecipe(mod);*/
 			recipe.AddIngredient(ItemID.MythrilOre,10);
 			recipe.AddIngredient(null,"MineralSolution");
@@ -53,7 +53,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<MythrilSolution>());
+            item.CloneDefaults(mod.ItemType("MythrilSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

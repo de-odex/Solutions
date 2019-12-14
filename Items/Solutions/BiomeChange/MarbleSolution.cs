@@ -46,7 +46,7 @@ namespace SolutionsMod.Items.Solutions.BiomeChange
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<MarbleSolution>());
+            item.CloneDefaults(mod.ItemType("MarbleSolution"));
             item.consumable = false;
         }
 

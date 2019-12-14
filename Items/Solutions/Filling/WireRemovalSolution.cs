@@ -83,7 +83,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<WireRemovalSolution>());
+            item.CloneDefaults(mod.ItemType("WireRemovalSolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

@@ -45,7 +45,7 @@ namespace SolutionsMod.Items.Solutions
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<ClaySolution>());
+            item.CloneDefaults(mod.ItemType("ClaySolution"));
             item.consumable = false;
             item.maxStack = 1;
         }

@@ -12,7 +12,7 @@ namespace SolutionsMod.Projectiles.Solutions.BiomeChange
             base.SetDefaults();
             //projectile.name = "Jungle Spray";
             maxTime = 134;
-            dustType = mod.DustType<JungleDust>();
+            dustType = mod.DustType("JungleDust");
         }
 
         public override void Convert(int i, int j, int size = 4)
